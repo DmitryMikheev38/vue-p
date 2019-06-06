@@ -46,13 +46,6 @@ export default {
     }
   },
   methods: {
-    testImage () {
-      this.$store.dispatch('testImage')
-    },
-    TEST () {
-      var id = Math.round(Math.random() * 1000000000)
-     console.log('random;' + id)
-    },
     triggerUpload () {
       this.$refs.fileUpload.click()
     },
@@ -68,8 +61,6 @@ export default {
       .then(() => {
       })
     }
-  },
-  watch: {
   },
   created () {
     this.$store.dispatch('fechImages')
@@ -133,12 +124,10 @@ export default {
 
   }
 
-  img {
-    
+  img {   
     max-width: 100%;
     height: 100%;
     margin: 0px auto;
-    
 }
 
 .clearfix {
